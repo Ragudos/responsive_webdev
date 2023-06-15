@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Programmer's Sanctuary | Satisfaction Survey" />
+    <meta name="description" content="A page for gathering the satisfaction of customers." />
+    <meta name="keywords" content="Survey Programming Coding Satisfaction" />
+
+    <meta name="og:title" content="rogrammer's Sanctuary | Satisfaction Survey" />
+    <meta name="og:description" content="A page for gathering the satisfaction of customers." />
+    <meta name="og:image" content="https://satisfactionsurvey.netlify.app/assets/images/image-preview.jpg" />
+    <meta name="og:width" content="976px" />
+    <meta name="og:height" content="640px" />
+    <meta name="og:alt" content="Preview Image of the Satistafction Survey of Programmer's Sanctuary." />
+    <meta name="og:filetype" content="image/jpg" />
+
+    <meta name="twitter:card" content="website" />
+    <meta name="twitter:title" content="Programmer's Sanctuary | Satisfaction Survey" />
+    <meta name="twitter:description" content="A page for gathering the satisfaction of customers."/>
+    <meta name="twitter:image" content="https://satisfactionsurvey.netlify.app/assets/images/image-preview.jpg" />
+    <meta name="twitter:width" content="976px" />
+    <meta name="twitter:height" content="640px" />
+    <meta name="twitter:alt" content="Preview Image of the Satistafction Survey of Programmer's Sanctuary." />
+    <meta name="twitter:filetype" content="image/jpg" />
+    <title>Programmer's Sanctuary | Satisfaction Survey</title>
+
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+</head>
+<body>
+    <main>
+        <article>
+            <h1 id="title">Satisfaction Survey</h1>
+            <p id="description">A page for gathering the satisfaction of customers.</p>
+        
+            <form id="survey-form">
+
+                <label id="name-label" title="Enter your name..." for="name">
+                    <span>1. Name (required)</span>
+                    <input
+                        type="text"
+                        placeholder="Enter your name..."
+                        id="name"
+                        minlength="3"
+                        required
+                    >
+                </label>
+                
+                <label id="email-label" title="Enter your email..." for="email">
+                    <span>2. Email (required)</span>
+                    <input
+                        type="email"
+                        placeholder="Enter your email..."
+                        id="email"
+                        required
+                    >
+                </label>
+                
+                <label id="number-label" title="Age" for="number">
+                    <span>3. Age (required)</span>
+                    <input
+                        type="number"
+                        placeholder="Enter your age..."
+                        required
+                        min="14"
+                        max="70"
+                        id="number"
+                    >
+                </label>
+
+                <label id="occupation-label" title="Choose your occupation..." for="occupation-dropdown">
+                    <span>4. Occupation (required)</span>
+                    <select id="dropdown">
+                        <option disabled selected>Choose your occupation</option>
+                        <option value="Professor">Professor</option>
+                        <option value="Student">Student</option>
+                        <option value="Author">Author</option>
+                        <option value="Programmer">Programmer</option>
+                        <option value="Businessman">Businessman</option>
+                    </select>
+                </label>
+
+                <div class="radio-section-container">
+                    <large>5. Rate the satisfaction you have with the services provided by Programmer's Sanctuary. One being the lowest and five being the highest. (required)</large>
+                    <section class="radio-section">
+
+                        <label title="Very Dissatisfied" >
+                            <input name="user-satisfaction" value="1" type="radio" />
+                            1 - Very Dissatisfied
+                        </label>
+                        
+                        <label title="Dissatisfied">
+                            <input name="user-satisfaction" value="2" type="radio" />
+                            2 - Dissatisfied
+                        </label>
+
+                        <label title="Neutral">
+                            <input name="user-satisfaction" value="3" type="radio" />
+                            3 - Neutral
+                        </label>
+                        
+                        <label title="Satisfied">
+                            <input name="user-satisfaction" value="4" type="radio" />
+                            4 - Satisfied
+                        </label>
+                        
+                        <label title="Very Satisfied">
+                            <input name="user-satisfaction" value="5" type="radio" checked />
+                            5 - Very Satisfied
+                        </label>
+                    </section>
+                </div>
+
+                <div class="checkbox-section-container">
+                    <large>6. What areas can the service improve on to enhance your future experience in Programmer's Sanctuary?</large>
+                    <section class="checkbox-section">
+
+                        <label title="Customer Service">
+                            <input value="customer-service" type="checkbox" name="user-recommendations">
+                            - Customer Service
+                        </label>
+                        
+                        <label title="Faster Deployment of Services & Products">
+                            <input value="faster-deployment" type="checkbox" name="user-recommendations">
+                            - Faster Deployment of Services & Products
+                        </label>
+                        
+                        <label title="More User-Friendly">
+                            <input value="user-friendly" type="checkbox" name="user-recommendations">
+                            - More User-Friendly
+                        </label>
+                        
+                        <label title="More Variations of Services & Products">
+                            <input value="product-variation" type="checkbox" name="user-recommendations">
+                            - More Variations of Services & Products
+                        </label>
+                        
+                        <label title="Varying Price Range">
+                            <input value="price-range" type="checkbox" name="user-recommendations">
+                            - Varying Price Range
+                        </label>
+                        
+                        <label title="Integrations of Other Services">
+                            <input value="service-integrations" type="checkbox" name="user-recommendations">
+                            - Integrations of Other Services
+                        </label>
+                        
+                        <label title="More Places for User Feedbacks">
+                            <input value="more-feedback-locations" type="checkbox" name="user-recommendations">
+                            - More Places for User Feedbacks
+                        </label>
+                    </section>
+                </div>
+
+                <label title="Feedbacks">
+                    <large>7. Please state any feedbacks or user-related requests that you may have for Programmer's Sanctuary.</large>
+                    <textarea name="feedbacks" placeholder="Programmer's Sanctuary can improve on..."></textarea>
+                </label>
+
+                <input
+                    type="submit"
+                    id="submit"
+                    value="Submit Response"
+                />
+            </form>
+            <p>By submitting, you agree to the <strong>Terms & Conditions</strong> and <strong>Privacy Policy</strong> of Programmer's Sanctuary &copy;.</p>
+        </article>
+    </main>
+</body>
+</html>
